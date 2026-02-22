@@ -218,7 +218,7 @@ checkoutBtn.addEventListener("click", function(){
     }).join("")
 
     const pedido = parseInt(Math.random() * 1000 + 1)
-    const message = encodeURIComponent(`*------NOVO PEDIDO #${pedido}------*\n`+cartItems+`___________________\n`+`*Total:* ${cartTotal.textContent}\n`+`\n\n-------ENTREGA--------`+`\n*Cliente:* ${nomeInput.value}\n`+`*Endereço:* \n${addressInput.value}`)
+    const message = encodeURIComponent(`*------NOVO PEDIDO #${pedido}------*\n`+cartItems+`___________________\n`+`*Total:* ${cartTotal.textContent}\n`+`\n\n-------ENTREGA--------`+`\n*Cliente:* ${nomeInput.value}\n`+`*Obs:* \n${addressInput.value}`)
     const phone = "5592985873521"
 
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
@@ -231,7 +231,7 @@ function checkRestaurantOpen(){
     const hora = data.getHours();
     const day = data.getDay();
     if(day === 1) return false; // Segundas-feiras sempre fechado.
-    return hora >= 12 && hora < 23; 
+    return hora >= 17 && hora < 23; 
     //True = restaurante ta aberto.
 }
 
