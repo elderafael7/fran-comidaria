@@ -231,7 +231,7 @@ function checkRestaurantOpen(){
     const hora = data.getHours();
     const day = data.getDay();
     if(day === 1) return false; // Segundas-feiras sempre fechado.
-    return hora >= 17 && hora < 23; 
+    return hora >= 12 && hora < 23; 
     //True = restaurante ta aberto.
 }
 
