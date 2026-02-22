@@ -15,7 +15,7 @@
 
 ## 💻 Acesso à aplicação
 <div>
-  https://docim-doceria-delivery-app.vercel.app/
+  
 </div>
 
 
