@@ -1,7 +1,7 @@
 <h1>iBurger-delivery-app</h1>
 
 <h2>📋 Sobre</h2>
-<p>Aplicativo front end para vendas de fast food ou guloseimas, enviando pedido direto para o whatsapp do proprietario.</p>
+<p>Aplicativo front end para vendas de fast food ou guloseimas, enviando pedido direto para o whatsapp do proprietário.</p>
 
 ## 🦾 Tecnologias usadas
 

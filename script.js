@@ -59,7 +59,7 @@ function addToCart(name, price){
             position: "right", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-                background: "#3D2E23",
+                background: "#631812",
             },
         }).showToast()
     }else{
@@ -76,7 +76,7 @@ function addToCart(name, price){
             position: "right", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
-                background: "#3D2E23",
+                background: "#631812",
             },
         }).showToast()
     }
@@ -97,16 +97,16 @@ function updateCartModal(){
         cartItemElement.innerHTML = `
             <div class="flex items-center justify-between">
                 <div>
-                    <p class="font-medium text-[#3D2E23]">${item.name}</p>
-                    <p class="text-[#3D2E23]">Qtd: ${item.quantity}</p>
-                    <p class="font-medium mt-2 text-[#3D2E23]">R$ ${(item.price * item.quantity).toFixed(2).toLocaleString("pt-BR", {
+                    <p class="font-medium text-[#000000]">${item.name}</p>
+                    <p class="text-[#000000]">Qtd: ${item.quantity}</p>
+                    <p class="font-medium mt-2 text-[#000000]">R$ ${(item.price * item.quantity).toFixed(2).toLocaleString("pt-BR", {
                         style: "currency",
                         currency: "BRL"
                     })}</p>
                 </div>
                 <div class="px-4 py-1 border-solid border-red-500 rounded" data-name="${item.name}">
-                    <button class="remove-from-cart-btn text-[#3D2E23] border-solid border-red-500" data-name="${item.name}">
-                        <i class="fa-solid fa-trash text-[#3D2E23]"></i>
+                    <button class="remove-from-cart-btn text-[#631812] border-solid border-red-500" data-name="${item.name}">
+                        <i class="fa-solid fa-trash text-[#631812]"></i>
                         Excluir
                     </button>
                 </div>
@@ -199,10 +199,10 @@ checkoutBtn.addEventListener("click", function(){
     
     if(cart.length === 0) return;
    
-    if(addressInput.value === ""){
+    /*if(addressInput.value === ""){
         addressWarn.classList.remove("hidden")
         addressInput.classList.add("border-red-500")
-    }
+    }*/
 
     if(nomeInput.value === ""){
         nomeWarn.classList.remove("hidden")
@@ -219,7 +219,7 @@ checkoutBtn.addEventListener("click", function(){
 
     const pedido = parseInt(Math.random() * 1000 + 1)
     const message = encodeURIComponent(`*------NOVO PEDIDO #${pedido}------*\n`+cartItems+`___________________\n`+`*Total:* ${cartTotal.textContent}\n`+`\n\n-------ENTREGA--------`+`\n*Cliente:* ${nomeInput.value}\n`+`*Endereço:* \n${addressInput.value}`)
-    const phone = "5592992909224"
+    const phone = "5592985873521"
 
     window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
 });
@@ -229,7 +229,9 @@ checkoutBtn.addEventListener("click", function(){
 function checkRestaurantOpen(){
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 6 && hora < 22; 
+    const day = data.getDay();
+    if(day === 1) return false; // Segundas-feiras sempre fechado.
+    return hora >= 17 && hora < 23; 
     //True = restaurante ta aberto.
 }
 

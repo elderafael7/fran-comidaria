@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,179 +24,832 @@
 
     <link rel="stylesheet" href="./styles/output.css">
 
-    <title>Docim-Doceria</title>
+    <title>Comidaria Fran</title>
 </head>
-<body class="bg-[#EAE1CE]">
+<body class="bg-[#FFFFFF]">
     <!--HEADER-->
     <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
         <div class="w-full h-full flex flex-col justify-center items-center">
             <img 
-                src="./assets/docim-logo.jpg" 
-                alt="Logo Docim-Doceria"
+                src="./assets/comidaria-logo.jpg" 
+                alt="Logo Comidaria-Fran"
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
             >
-            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Docim Doceria</h1>
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-[#631812]">Fran Comidaria</h1>
 
-            <span class="font-normal md:font-medium text-white">Rua Cecília Meireles, 240 - Sto Antônio</span>
+            <span class="font-bold md:font-medium text-[#631812]">Rua Irmã Dulce, 300 - Colônia Terra Nova</span>
 
             <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-                <span class="text-white font-medium">Seg à Dom - 06:00 às 22:00</span>
+                <span class="text-white font-medium">Terça à Domingo - 17:00 às 23:00</span>
             </div>
         </div>
     </header>
     <!--FIM HEADER-->
 
-    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 text-[#3D2E23]">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6 text-[#631812]">
         Conheça nosso Cardápio
     </h2>
 
-    <div class="mx-auto max-w-7xl px-2 my-1">
-            <h2 class="font-bold text-3xl text-[#3D2E23]">
-                Mousses
-            </h2>
-    </div>
+ 
 
     <!--INíCIO MENU-->
     <div id="menu" class="mt-5">
         <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
             
-            <!--PRODUTO ITEM-->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/mousse-limao.jpg" 
-                    alt="Mousse de Limao"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-                />
-
-                <div>
-                    <p class="font-bold text-[#3D2E23]">Mousse de Limão</p> 
-                    <p class="text-sm">Imagine a explosão cítrica do limão com a cremosidade perfeita. Uma nuvem de sabor a cacda colherada!</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]">R$ 8,00</p>
-                        <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Mousse de Limão"
-                        data-price="8"
-                        >
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM-->
-            
-            <!--PRODUTO ITEM-->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/mousse-maracuja.jpg" 
-                    alt="mousse-maracuja"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-                />
-
-                <div>
-                    <p class="font-bold text-[#3D2E23]">Mousse de Maracujá</p>
-                    <p class="text-sm">Doçura suave e o toque do Maracujá, uma textura cremosa e aerada que derrete na boca.</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]">R$ 8,00</p>
-                        <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Mousse de Maracujá"
-                        data-price="8"
-                        >
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM-->
-
-            <!--PRODUTO ITEM-->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/mousse-maracuja-chocolate.jpg" 
-                    alt="mousse-maracuja-chocolate"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-                />
-
-                <div>
-                    <p class="font-bold text-[#3D2E23]">Mousse de Maracujá c/ Chocolate</p>
-                    <p class="text-sm">Imagine a acidez tropical e envolvente do maracujá com a intensidade rica e sedutora do chocolate.</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]">R$ 8,00</p>
-                        <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Mousse de Maracujá c/ Chocolate"
-                        data-price="8"
-                        >
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM-->
-
-            <!--PRODUTO ITEM-->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/mousse-limao-chocolate.jpg" 
-                    alt="mousse-limao-chocolate"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-                />
-
-                <div>
-                    <p class="font-bold text-[#3D2E23]">Mousse de Limão c/ Chocolate</p>
-                    <p class="text-sm">Com um visual que atrai os olhos e um sabor que conquista o coração.</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]">R$ 8,00</p>
-                        <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Mousse de Limão c/ Chocolate"
-                        data-price="8"
-                        >
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM-->
-
-             <!--PRODUTO ITEM-->
-            <div class="flex gap-2">
-                <img 
-                    src="./assets/mousse-chocolate-brownie.jpg" 
-                    alt="mousse-maracuja-chocolate"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
-                />
-
-                <div>
-                    <p class="font-bold text-[#3D2E23]">Mousse de Chocolate com Brownie</p>
-                    <p class="text-sm">Mousse de chocolate mais cremoso que derrete na boca, a mastigabilidade irresistível de pedaços do nosso brownie..</p>
-                    
-                    <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]">R$ 8,00</p>
-                        <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Mousse de Maracujá c/ Chocolate"
-                        data-price="8"
-                        >
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--FIM PRODUTO ITEM-->
-
-            
 
         </main>
 
         <div class="mx-auto max-w-7xl px-2 my-2">
-            <h2 class="font-bold text-3xl text-[#3D2E23]">
-                Pudins & Brownies
+            <h2 class="font-bold text-3xl text-[#631812]">
+                Combos 🥊
+            </h2>
+        </div>
+                <!--GRID BEBIDAS-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/combo-01.png" 
+                            alt="imagem-combo-1"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Combo 1</p>
+                            <p>2 X-Salada, 1 Batata Frita, 1 Refrigerante de 1L.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                
+                                <p class="font-bold text-lg text-[#631812]" >R$ 28,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 1: 2 X-Salada, 1 Batata Frita, 1 Refrigerante de 1L"
+                                data-price="28"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/combo-02.png" 
+                            alt="imagem-combo-2"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Combo 2</p>
+                            <p>4 X-Salada, 1 Refrigerante de 1,5L.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 2: 4 X-Salada, 1 Refrigerante de 1,5L."
+                                data-price="38"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/combo-03.png" 
+                            alt="imagem-combo-3"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Combo 3</p>
+                            <p>Pão, queijo mussarela, ovo, alface, presunto de perú e tomate.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 56,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 3: 6 X-Salada, 1 Refrigerante de 2L."
+                                data-price="56"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/combo-04.png" 
+                            alt="imagem-combo-4"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Combo 4</p>
+                            <p>2 X-Salada, 2 X-Bacon, 1 Refrigerante de 1,5L</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 44,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 4: 2 X-Salada, 2 X-Bacon, 1 Refrigerante de 1,5L"
+                                data-price="44"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/combo-05.png" 
+                            alt="imagem-combo-5"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Combo 5</p>
+                            <p>3 X-Bacon, 1 Batata Frita, 1 Refrigerante de 1L.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 40,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 5: 3 X-Bacon, 1 Batata Frita, 1 Refrigerante de 1L."
+                                data-price="40"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/combo-06.png" 
+                            alt="imagem-combo-6"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Combo 6</p>
+                            <p>2 Pizza MÉDIA TRADICIONAL, 1 Refrigerante de 1,5L.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 55,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 6: 2 Pizza MÉDIA TRADICIONAL, 1 Refrigerante de 1,5L."
+                                data-price="55"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                    <img 
+                        src="./assets/combo-07.png" 
+                        alt="imagem-combo-7"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+    
+                    <div class="w-full">
+                        <p class="font-bold text-[#631812]">Combo 7</p>
+                        <p>2 Pizza GRANDE TRADICIONAL, 1 Refrigerante de 2L.</p>
+                        <div class="flex items-center gap-2 justify-between mt-4">
+                            <p class="font-bold text-lg text-[#631812]" >R$ 70,00</p>
+                            <button 
+                            class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                            data-name="Combo 7: 2 Pizza GRANDE TRADICIONAL, 1 Refrigerante de 2L."
+                            data-price="70"
+                            >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--FIM BEBIDA ITEM-->
+    
+                <!--BEBIDA ITEM-->
+                <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/combo-08.png" 
+                    alt="imagem-combo-8"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+    
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Combo 8</p>
+                    <p>3 X-Salada, 1 Refrigerante de 1L.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 30,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Combo 8: 3 X-Salada, 1 Refrigerante de 1L."
+                        data-price="30"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->                
+                </div>
+                <!--FIM GRID BEBIDAS-->
+    
+                <div class="mx-auto max-w-7xl px-2 my-2">
+                    <h2 class="font-bold text-3xl text-[#631812]">
+                        Sanduíches Tradicionais 🍔
+                    </h2>
+                </div>
+                        <!--GRID BEBIDAS-->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+                            <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                    src="./assets/misto-simples.png" 
+                                    alt="misto-simples"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                
+                                <div class="w-full">
+                                    <p class="font-bold text-[#631812]">Misto Simples</p>
+                                    <p>Pão, queijo Mussarela e Presunto de perú.</p>
+                                    <div class="flex items-center gap-2 justify-between mt-4">
+                                        
+                                        <p class="font-bold text-lg text-[#631812]" >R$ 6,00</p>
+                                        <button 
+                                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                        data-name="Misto Simples"
+                                        data-price="5"
+                                        >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIM BEBIDA ITEM-->
+                            
+                            <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                    src="./assets/misto-simples.png" 
+                                    alt="misto-duplo"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                
+                                <div class="w-full">
+                                    <p class="font-bold text-[#631812]">Misto Duplo</p>
+                                    <p>Pão, dois queijos Mussarela e dois Presuntos de perú.</p>
+                                    <div class="flex items-center gap-2 justify-between mt-4">
+                                        <p class="font-bold text-lg text-[#631812]" >R$ 7,00</p>
+                                        <button 
+                                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                        data-name="Misto Duplo"
+                                        data-price="7"
+                                        >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIM BEBIDA ITEM-->
+                
+                             <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                    src="./assets/bauru.png" 
+                                    alt="bauru"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                
+                                <div class="w-full">
+                                    <p class="font-bold text-[#631812]">Bauru</p>
+                                    <p>Pão, queijo mussarela, ovo, alface, presunto de perú e tomate.</p>
+                                    <div class="flex items-center gap-2 justify-between mt-4">
+                                        <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                        <button 
+                                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                        data-name="Bauru"
+                                        data-price="9"
+                                        >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIM BEBIDA ITEM-->
+                
+                             <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                    src="./assets/x-burguer.png" 
+                                    alt="imagem-combo-4"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                
+                                <div class="w-full">
+                                    <p class="font-bold text-[#631812]">X-Burguer</p>
+                                    <p>Pão, carne de hambúrguer, queijo mussarela, alface, tomate.</p>
+                                    <div class="flex items-center gap-2 justify-between mt-4">
+                                        <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                        <button 
+                                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                        data-name="X-Burguer"
+                                        data-price="9"
+                                        >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIM BEBIDA ITEM-->
+                
+                            <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                    src="./assets/x-maionese.png" 
+                                    alt="x-maionese"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                
+                                <div class="w-full">
+                                    <p class="font-bold text-[#631812]">X-Maionese</p>
+                                    <p>Pão, carne de hambúrguer, queijo mussarela, presunto, alface e tomate.</p>
+                                    <div class="flex items-center gap-2 justify-between mt-4">
+                                        <p class="font-bold text-lg text-[#631812]" >R$ 10,00</p>
+                                        <button 
+                                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                        data-name="X-Maionese"
+                                        data-price="10"
+                                        >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIM BEBIDA ITEM-->
+                
+                            
+                
+                            <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                    src="./assets/x-salsicha.png" 
+                                    alt="x-salsicha"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                
+                                <div class="w-full">
+                                    <p class="font-bold text-[#631812]">X-Salsicha</p>
+                                    <p>Pão, salsicha, queijo mussarela, presunto, alface e tomate.</p>
+                                    <div class="flex items-center gap-2 justify-between mt-4">
+                                        <p class="font-bold text-lg text-[#631812]" >R$ 10,00</p>
+                                        <button 
+                                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                        data-name="X-Salsicha"
+                                        data-price="10"
+                                        >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FIM BEBIDA ITEM-->
+            
+                            <!--BEBIDA ITEM-->
+                            <div class="flex gap-2 w-full">
+                            <img 
+                                src="./assets/x-salada.png" 
+                                alt="x-salada"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            />
+            
+                            <div class="w-full">
+                                <p class="font-bold text-[#631812]">X-Salada</p>
+                                <p>Pão, carne de hambúrguer, queijo mussarela, presunto de perú, ovo, alface e tomate.</p>
+                                <div class="flex items-center gap-2 justify-between mt-4">
+                                    <p class="font-bold text-lg text-[#631812]" >R$ 11,00</p>
+                                    <button 
+                                    class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                    data-name="X-Salada"
+                                    data-price="70"
+                                    >
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--FIM BEBIDA ITEM-->
+            
+                        <!--BEBIDA ITEM-->
+                        <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-salada-especial.png" 
+                            alt="x-salada-especial"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Salada Especial</p>
+                            <p>Pão, duas carnes de hambúrguer, ovo, queijo mussarela, presunto de perú, alface e tomate.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 13,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="X-Salada Especial"
+                                data-price="13"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-calabresa.png" 
+                            alt="x-calabresa"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Calabresa</p>
+                            <p>Pão, 2 Carnes de hambúrguer, calabresa, queijo mussarela, presunto de perú, alface e tomate.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 12,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="X-Calabresa"
+                                data-price="12"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-bacon.png" 
+                            alt="x-bacon"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Bacon</p>
+                            <p>Pão, carne de hambúrguer, bacon, queijo mussarela, presunto de perú, alface e tomates.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 12,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="X-Bacon"
+                                data-price="12"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-salada-bacon.png" 
+                            alt="x-salada-bacon"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Salada Bacon</p>
+                            <p>Pão, carne de hambúrguer, bacon, queijo mussarela, presunto de perú, ovo, alface e tomate.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 13,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="X-Salada Bacon"
+                                data-price="13"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-bacon especial.png" 
+                            alt="x-bacon-especial"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Bacon Especial</p>
+                            <p>Pão, 2 carnes de hambúrguer, bacon, queijo mussarela, presunto de perú, alface e tomate.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 14,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="X-Bacon Especial"
+                                data-price="14"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-banana.png" 
+                            alt="x-banana"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Banana</p>
+                            <p>Pão, carne de hambúrguer, queijo coalho, banana frita, tomate e alface.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 13,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 8: 3 X-Salada, 1 Refrigerante de 1L."
+                                data-price="13"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-salada-frango-desfiado.png" 
+                            alt="x-salada-frango-desfiado"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Salada c/ Frango desfiado</p>
+                            <p>Pão, queijo mussarela, frango desfiado, tomate e alface.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 13,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Combo 8: 3 X-Salada, 1 Refrigerante de 1L."
+                                data-price="13"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->     
+
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/x-tudo.png" 
+                            alt="x-salada-especial"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+            
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">X-Tudo</p>
+                            <p>Pão, carne de hambúrguer, bacon, salsicha, calabresa, queijo mussarela, presunto de perú, ovo, alface e tomate.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 16,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="X-Tudo"
+                                data-price="16"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->     
+
+                        </div>
+                        <!--FIM GRID BEBIDAS-->
+
+                        <div class="mx-auto max-w-7xl px-2 my-2">
+                            <h2 class="font-bold text-3xl text-[#631812]">
+                                Hotdogs, Batata e Sopas 🌭🍟🥘
+                            </h2>
+                        </div>
+                                <!--GRID BEBIDAS-->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+                                    <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/kikao-simples.png" 
+                                            alt="kikao-simples"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Kikao Simples</p>
+                                            <p>Pão, molho, salsicha, maionese, ketchup, queijo ralado e batata palha.</p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 8,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Kikao Simples"
+                                                data-price="8"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+                                    
+                                    <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/kikao-especial.png" 
+                                            alt="kikao-especial"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Kikao Especial</p>
+                                            <p>Pão, queijo mussarela, bacon, molho, maionese, ketchup e calabresa.</p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 11,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Kikao Especial"
+                                                data-price="11"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+                        
+                                     <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/sopa-carne.png" 
+                                            alt="sopa-carne"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Sopa de Carne</p>
+                                            <p></p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 15,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Sopa de Carne"
+                                                data-price="15"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+                        
+                                     <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/batata-frita-com-bacon-queijo-cheddar.png" 
+                                            alt="batata-frita-com-bacon-queijo-cheddar"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Batata Frita c/ Bacon e Queijo Cheddar 450g</p>
+                                            <p></p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 25,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Batata Frita c/ Bacon e Queijo Cheddar"
+                                                data-price="25"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+                        
+                                    <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/batata-frita-com-calabresa-queijo-cheddar.png" 
+                                            alt="batata-frita-com-calabresa-queijo-cheddar"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Batata Frita c/ Calabresa e Queijo Cheddar</p>
+                                            <p></p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 25,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Batata Frita c/ Calabresa e Queijo Cheddar"
+                                                data-price="25"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+                        
+                                    <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/batata-frita.png" 
+                                            alt="batata-frita"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Batata Frita Pequena</p>
+                                            <p></p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 10,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Batata Frita Pequena"
+                                                data-price="10"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+
+                                    <!--BEBIDA ITEM-->
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                            src="./assets/batata-frita.png" 
+                                            alt="batata-frita-grande"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                        
+                                        <div class="w-full">
+                                            <p class="font-bold text-[#631812]">Batata Frita Grande</p>
+                                            <p></p>
+                                            <div class="flex items-center gap-2 justify-between mt-4">
+                                                <p class="font-bold text-lg text-[#631812]" >R$ 15,00</p>
+                                                <button 
+                                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                                data-name="Batata Frita Grande"
+                                                data-price="15"
+                                                >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--FIM BEBIDA ITEM-->
+                        
+                                    
+        
+                                </div>
+                                <!--FIM GRID BEBIDAS-->
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl text-[#631812]">
+                Pizzas Tradicionais (Média) 🍕
             </h2>
         </div>
 
@@ -205,21 +858,21 @@
             <!--BEBIDA ITEM-->
             <div class="flex gap-2 w-full">
                 <img 
-                    src="./assets/pudim-leite.jpg" 
-                    alt="pudim-leite"
+                    src="./assets/pizza-mussarela.png" 
+                    alt="pizza-mussarela"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
                 />
 
                 <div class="w-full">
-                    <p class="font-bold text-[#3D2E23]">Pudim de Leite</p>
-                    <p class="text-sm">A cremosidade inconfundível que desmancha na boca e o brilho sedutor da calda de caramelo que o envolve.</p>
+                    <p class="font-bold text-[#631812]">Mussarela - Média</p>
+                    <p class="text-sm">Mussarela, cebola e ingredientes.</p>
                     <div class="flex items-center gap-2 justify-between mt-4">
                         
-                        <p class="font-bold text-lg text-[#3D2E23]" >R$ 10,00</p>
+                        <p class="font-bold text-lg text-[#631812]" >R$ 28,00</p>
                         <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Pudim de Leite"
-                        data-price="10"
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Mussarela"
+                        data-price="28"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -231,20 +884,20 @@
             <!--BEBIDA ITEM-->
             <div class="flex gap-2 w-full">
                 <img 
-                    src="./assets/brownie-s-recheio.jpg" 
-                    alt="brownie-s-recheio"
+                    src="./assets/pizza-portuguesa.png" 
+                    alt="pizza-portuguesa"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
                 />
 
                 <div class="w-full">
-                    <p class="font-bold text-[#3D2E23]">Brownie sem recheio</p>
-                    <p>Úmido, denso e intensamente chocolatudo, que desmancha na boca a cada mordida. É a celebração pura do chocolate.</p>
+                    <p class="font-bold text-[#631812]">Portuguesa - Média</p>
+                    <p>Presunto, ovo, tomate, ervilha, pimentão e ingredientes.</p>
                     <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]" >R$ 5,00</p>
+                        <p class="font-bold text-lg text-[#631812]" >R$ 29,00</p>
                         <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Brownie sem recheio"
-                        data-price="5"
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Portuguesa"
+                        data-price="37"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -256,20 +909,20 @@
              <!--BEBIDA ITEM-->
             <div class="flex gap-2 w-full">
                 <img 
-                    src="./assets/brownie-creme-leite-ninho.jpg" 
+                    src="./assets/pizza-calabresa.png" 
                     alt="brownie-creme-leite-ninho"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
                 />
 
                 <div class="w-full">
-                    <p class="font-bold text-[#3D2E23]">Brownie c/ creme de leite ninho</p>
-                    <p>A perfeição de um brownie intenso com o mais cremoso, suave e irresistível recheio de Leite Ninho.</p>
+                    <p class="font-bold text-[#631812]">Calabresa - Média</p>
+                    <p>Calabresa em rodelas, cebola e ingredientes.</p>
                     <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]" >R$ 7,00</p>
+                        <p class="font-bold text-lg text-[#631812]" >R$ 29,00</p>
                         <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Brownie c/ creme de leite ninho"
-                        data-price="7"
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Calabresa"
+                        data-price="29"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -281,20 +934,97 @@
              <!--BEBIDA ITEM-->
             <div class="flex gap-2 w-full">
                 <img 
-                    src="./assets/brownie-recheado-brigadeiro.jpg" 
-                    alt="brownie-recheado-brigadeiro"
+                    src="./assets/pizza-paulista.png" 
+                    alt="pizza-paulista"
                     class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
                 />
 
                 <div class="w-full">
-                    <p class="font-bold text-[#3D2E23]">Brownie recheado com brigadeiro</p>
-                    <p>A intensidade do chocolate do brownie contrastando e se complementando perfeitamente com o brigadeiro.</p>
+                    <p class="font-bold text-[#631812]">Paulista - Média</p>
+                    <p>Calabresa em rodelas, tomate, cebola e ingredientes.</p>
                     <div class="flex items-center gap-2 justify-between mt-4">
-                        <p class="font-bold text-lg text-[#3D2E23]" >R$ 7,00</p>
+                        <p class="font-bold text-lg text-[#631812]" >R$ 29,00</p>
                         <button 
-                        class="bg-[#3D2E23] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
-                        data-name="Brownie recheado c/ brigadeiro"
-                        data-price="7"
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Paulista"
+                        data-price="29"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-marguerita.png" 
+                    alt="pizza-marguerita"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Marguerita - Média</p>
+                    <p>Tomate em rodelas, manjericão e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 29,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Marguerita"
+                        data-price="29"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-napolitana.png" 
+                    alt="pizza-napolitana"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Napolitana - Média</p>
+                    <p>Presunto fatiado, cebola e pedaços de tomate.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 29,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Napolitana"
+                        data-price="29"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-frango.png" 
+                    alt="pizza-paulista"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Frango - Média</p>
+                    <p>Frango desfiado, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 29,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Frango"
+                        data-price="29"
                         >
                             <i class="fa fa-cart-plus text-lg text-white"></i>
                         </button>
@@ -305,39 +1035,1184 @@
             
         </div>
         <!--FIM GRID BEBIDAS-->
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl text-[#631812]">
+                Pizzas Tradicionais (Grande) 🍕
+            </h2>
+        </div>
+
+        <!--GRID BEBIDAS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-mussarela.png" 
+                    alt="pizza-mussarela"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Mussarela - Grande</p>
+                    <p class="text-sm">Mussarela, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        
+                        <p class="font-bold text-lg text-[#631812]" >R$ 37,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Mussarela"
+                        data-price="37"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+            
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-portuguesa.png" 
+                    alt="pizza-portuguesa"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Portuguesa - Grande</p>
+                    <p>Presunto, ovo, tomate, ervilha, pimentão e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Portuguesa"
+                        data-price="38"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+             <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-calabresa.png" 
+                    alt="brownie-creme-leite-ninho"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Calabresa - Grande</p>
+                    <p>Calabresa em rodelas, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Calabresa"
+                        data-price="38"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+             <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-paulista.png" 
+                    alt="pizza-paulista"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Paulista - Grande</p>
+                    <p>Calabresa em rodelas, tomate, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Paulista"
+                        data-price="38"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-marguerita.png" 
+                    alt="pizza-marguerita"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Marguerita - Grande</p>
+                    <p>Tomate em rodelas, manjericão e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Marguerita"
+                        data-price="38"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-napolitana.png" 
+                    alt="pizza-napolitana"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Napolitana - Grande</p>
+                    <p>Presunto fatiado, cebola e pedaços de tomate.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Napolitana"
+                        data-price="38"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-frango.png" 
+                    alt="pizza-Grande-frango"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Frango - Grande</p>
+                    <p>Frango desfiado, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 38,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza GRANDE Frango"
+                        data-price="38"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+            
+        </div>
+        <!--FIM GRID BEBIDAS-->
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl text-[#631812]">
+                Pizzas Especiais (Média) 🍕
+            </h2>
+        </div>
+
+        <!--GRID BEBIDAS-->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-frango-com-catupiry.png" 
+                    alt="pizza-frango-com-catupiry"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Frango c/ Catupiry - Média</p>
+                    <p class="text-sm">Frango desfiado, Catupiry, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        
+                        <p class="font-bold text-lg text-[#631812]" >R$ 32,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Frango Catupiry"
+                        data-price="32"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+            
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-bacon.png" 
+                    alt="pizza-bacon"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Bacon - Média</p>
+                    <p>Bacon fatiado, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 32,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Bacon"
+                        data-price="32"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+             <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-atum.png" 
+                    alt="pizza-atum"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Atum - Média</p>
+                    <p>Atum enlatado, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 32,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Atum"
+                        data-price="32"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+             <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-frango-com-catupiry.png" 
+                    alt="pizza-mussarela-com-catupiry"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Mussarela c/ Catupiry - Média</p>
+                    <p>Mussarela, catupiry, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 31,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Mussarela Catupiry"
+                        data-price="31"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-calabresa-com-catupiry.png" 
+                    alt="pizza-calabresa-com-catupiry"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Calabresa c/ Catupiry - Média</p>
+                    <p>Calabresa em rodelas, catupiry, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 32,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Calabresa Catupiry"
+                        data-price="32"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+
+            
+
+            <!--BEBIDA ITEM-->
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="./assets/pizza-bacon-com-catupiry.png" 
+                    alt="pizza-bacon-com-catupiry"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+
+                <div class="w-full">
+                    <p class="font-bold text-[#631812]">Bacon c/ Catupiry - Média</p>
+                    <p>Bacon fatiado, catupiry, cebola e ingredientes.</p>
+                    <div class="flex items-center gap-2 justify-between mt-4">
+                        <p class="font-bold text-lg text-[#631812]" >R$ 34,00</p>
+                        <button 
+                        class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                        data-name="Pizza MÉDIA Bacon Catupiry"
+                        data-price="34"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--FIM BEBIDA ITEM-->
+            
+        </div>
+        <!--FIM GRID BEBIDAS-->
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl text-[#631812]">
+                Pizzas Especiais (Grande) 🍕
+            </h2>
+        </div>
+                <!--GRID BEBIDAS-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/pizza-frango-com-catupiry.png" 
+                            alt="pizza-frango-com-catupiry-grade"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Frango c/ Catupiry - Grande</p>
+                            <p class="text-sm">Frango desfiado, Catupiry, cebola e ingredientes.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                
+                                <p class="font-bold text-lg text-[#631812]" >R$ 42,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Pizza GRANDE Frango Catupiry"
+                                data-price="42"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/pizza-bacon.png" 
+                            alt="pizza-bacon"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Bacon - Grande</p>
+                            <p>Bacon fatiado, cebola e ingredientes.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 42,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Pizza GRANDE Bacon"
+                                data-price="42"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/pizza-atum.png" 
+                            alt="pizza-atum"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Atum - Grande</p>
+                            <p>Atum enlatado, cebola e ingredientes.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 42,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Pizza GRANDE Atum"
+                                data-price="42"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/pizza-frango-com-catupiry.png" 
+                            alt="pizza-mussarela-com-catupiry"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Mussarela c/ Catupiry - Grande</p>
+                            <p>Mussarela, catupiry, cebola e ingredientes.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 40,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Pizza GRANDE Mussarela Catupiry"
+                                data-price="40"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/pizza-calabresa-com-catupiry.png" 
+                            alt="pizza-calabresa-com-catupiry"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Calabresa c/ Catupiry - Grande</p>
+                            <p>Calabresa em rodelas, catupiry, cebola e ingredientes.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 42,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Pizza GRANDE Calabresa Catupiry"
+                                data-price="42"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/pizza-bacon-com-catupiry.png" 
+                            alt="pizza-bacon-com-catupiry"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Bacon c/ Catupiry - Grande</p>
+                            <p>Bacon fatiado, catupiry, cebola e ingredientes.</p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 45,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Pizza Grande Bacon Catupiry"
+                                data-price="45"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                </div>
+                <!--FIM GRID BEBIDAS-->
+
+                <div class="mx-auto max-w-7xl px-2 my-2">
+                    <h2 class="font-bold text-3xl text-[#631812]">
+                        Refrigerantes 🍾
+                    </h2>
+                </div>
+        
+                <!--GRID BEBIDAS-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-coca-cola-2L.png" 
+                            alt="refrigerante-coca-cola-2L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Coca-Cola 2L.</p>
+                            <p class="text-sm"></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                
+                                <p class="font-bold text-lg text-[#631812]" >R$ 13,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Coca-cola 2L"
+                                data-price="13"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-fanta-laranja-2L.png" 
+                            alt="refrigerante-fanta-laranja-2L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Fanta-Laranja 2L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 13,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Fanta-Laranja 2L"
+                                data-price="32"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-coca-cola-2L.png" 
+                            alt="refrigerante-coca-cola-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Coca-Cola 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Coca-Cola 1L"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-fanta-laranja-2L.png" 
+                            alt="refrigerante-fanta-laranja-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Fanta-Laranja 1L<p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Fanta-Laranja 1L"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/lata-coca-cola.png" 
+                            alt="lata-coca-cola"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Coca-Cola Lata<p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 5,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Coca-Cola Lata"
+                                data-price="5"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/lata-fanta-laranja.png" 
+                            alt="lata-fanta-laranja"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Fanta-Laranja Lata<p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 5,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Fanta-Laranja Lata"
+                                data-price="5"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-bare.png" 
+                            alt="bare-2L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Baré 2L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Baré 2L"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-bare.png" 
+                            alt="bare-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Baré 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 6,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Baré 1L"
+                                data-price="6"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-tuchaua.jpg" 
+                            alt="Tuchaua 2L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Tuchaua 2L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 7,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Tuchaua 2L"
+                                data-price="7"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-tuchaua.jpg" 
+                            alt="Tuchaua-1,5L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Tuchaua 1,5L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 7,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Tuchaua 1,5L"
+                                data-price="7"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/refrigerante-tuchaua.jpg" 
+                            alt="Tuchaua-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Tuchaua 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 6,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Tuchaua 1L"
+                                data-price="6"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/agua.png" 
+                            alt="agua-350ml"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Água 350ml</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 3,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Água 350ml"
+                                data-price="3"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                    
+
+                </div>
+                <!--FIM GRID BEBIDAS-->
+
+                <div class="mx-auto max-w-7xl px-2 my-2">
+                    <h2 class="font-bold text-3xl text-[#631812]">
+                        Sucos
+                    </h2>
+                </div>
+        
+                <!--GRID BEBIDAS-->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16 mt-5" id="menu">
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-acerola.png" 
+                            alt="Jarra-suco-acerola-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Jarra de Suco Acerola 1L</p>
+                            <p class="text-sm"></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                
+                                <p class="font-bold text-lg text-[#631812]" >R$ 17,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Suco Acerola 1L"
+                                data-price="17"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-acerola.png" 
+                            alt="Jarra-suco-acerola-500ml"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Meia Jarra de Suco Acerola 500ml</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Meia Jarra Suco Acerola 500ml"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-graviola.png" 
+                            alt="Jarra-suco-graviola-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Jarra de Suco Graviola 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 18,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Suco Graviola 1L"
+                                data-price="18"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                     <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-graviola.png" 
+                            alt="Jarra-suco-graviola-500ml"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Meia Jarra de Suco Graviola 500ml<p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 10,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Meia Jarra Suco Graviola 500ml"
+                                data-price="10"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-goiaba.png" 
+                            alt="Jarra-suco-goiaba-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Jarra de Suco Goiaba 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 17,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Jarra de Suco Goiaba 1L"
+                                data-price="17"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+        
+                    <!--BEBIDA ITEM-->
+                    <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-goiaba.png" 
+                            alt="bare-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Meia Jarra de Suco Goiaba 500ml</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Meia Jarra Suco Goiaba 500ml"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-taperebá.png" 
+                            alt="Jarra-suco-Tapereba-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Jarra de Suco de Taperebá 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 17,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Jarra de Suco Taperebá 1L"
+                                data-price="17"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+                    
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-taperebá.png" 
+                            alt="Jarra-suco-Tapereba-500,l"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Meia Jarra Suco Taberebá 500ml</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Meia Jarra Suco Taberebá 500ml"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-cupuacu.png" 
+                            alt="Jarra-suco-cupuacu-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Jarra Suco Cupuaçu 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 17,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Jarra Suco Cupuaçu 1L"
+                                data-price="17"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-cupuacu.png" 
+                            alt="Jarra-suco-cupuacu-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Meia Jarra Suco Cupuaçu 500ml</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 9,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Jarra Suco Cupuaçu 500ml"
+                                data-price="9"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-maracuja.png" 
+                            alt="Jarra-suco-maracuja-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Jarra Suco Maracujá 1L</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 18,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Jarra Suco Maracujá 1L"
+                                data-price="18"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                     <!--BEBIDA ITEM-->
+                     <div class="flex gap-2 w-full">
+                        <img 
+                            src="./assets/suco-maracuja.png" 
+                            alt="Jarra-suco-maracuja-1L"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+        
+                        <div class="w-full">
+                            <p class="font-bold text-[#631812]">Meia Jarra Suco Maracujá 500ml</p>
+                            <p></p>
+                            <div class="flex items-center gap-2 justify-between mt-4">
+                                <p class="font-bold text-lg text-[#631812]" >R$ 10,00</p>
+                                <button 
+                                class="bg-[#631812] px-5 rounded add-to-cart-btn hover:rotate-2 hover:scale-110 duration-200"
+                                data-name="Meia Jarra Suco Maracujá 500ml"
+                                data-price="10"
+                                >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--FIM BEBIDA ITEM-->
+
+                </div>
+                <!--FIM GRID BEBIDAS-->
+    </div>
+
+       
     </div>
     <!--FIM MENU-->
 
     <!--MODAL CART-->
     <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
-        <div class="bg-[#EAE1CE] p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <div class="bg-[#ffffff] p-5 rounded-md min-w-[90%] md:min-w-[600px]">
             
-            <h2 class="text-center font-bold text-2xl mb-2 text-[#3D2E23] flex-initial">Meu carrinho
-                <i class="fa fa-cart-plus text-lg text-[#3D2E23]"></i>
+            <h2 class="text-center font-bold text-2xl mb-2 text-[#631812] flex-initial">Minha Sacola
+                <i class="fa fa-shopping-bag text-lg text-[#631812]"></i>
             </h2>
             
             <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
-            <p class="font-extrabold text-[#3D2E23]">Total: <span id="cart-total" class="text-[#3D2E23]">0.00</span></p>
-            <p class="font-bold mt-4 text-[#3D2E23]">Endereço de entrega: </p>
-            <input 
-                type="text"
-                placeholder="Digite seu endereço completo"
-                id="address"
-                class="w-full border-2 p-1 rounded my-1 text-[#3D2E23]"
-            />
-            <p class="text-red-500 hidden" id="address-warn">
-                Digite seu endereço completo
-            </p>
-            <p class="font-bold mt-4 text-[#3D2E23]">Contato: </p>
+            <p class="font-extrabold text-[#000000]">Total: <span id="cart-total" class="text-[#000000]">0.00</span></p>
+            <p class="font-bold mt-4 text-[#631812]">Contato: </p>
             <input 
                 type="text"
                 placeholder="Digite seu nome"
                 id="nome"
-                class="w-full border-2 p-1 rounded my-1 text-[#3D2E23]"
+                class="w-full border-2 p-1 rounded my-1 text-[#631812]"
             />
             <p class="text-red-500 hidden" id="nome-warn">
                 Informe seu nome
             </p>
+
+            <p class="font-bold mt-4 text-[#631812]">Observações</p>
+            <input 
+                type="text"
+                placeholder="Com bastante molho!"
+                id="address"
+                class="w-full border-2 p-1 rounded my-1 text-[#631812]"
+            />
+            <!--<p class="text-red-500 hidden" id="address-warn">
+                Digite seu endereço completo
+            </p>-->
+            
             <div class="flex items-center justify-between mt-5 w-full">
                 <button id="close-modal-btn" class="bg-red-600 text-white px-4 py-1 rounded">
                     <i class="fa-regular fa-circle-xmark pr-2"></i> 
@@ -356,11 +2231,13 @@
     <!--FIM MODAL CART-->
 
     <!--BUTTON CART FOOTER-->
-    <footer class="w-full bg-[#3D2E23] py-3 fixed bottom-0 z-40 flex items-center justify-center">
+    <footer class="w-full bg-[#631812] py-3 fixed bottom-0 z-40 flex items-center justify-center">
         <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
             ( <span id="cart-count">0</span> )
-            Ver Carrinho
-            <i class="fa fa-cart-plus text-lg text-white"></i>
+            Ver Sacola
+            <i class="fa fa-shopping-bag text-lg text-white"></i>
+            
+            
         </button>
     </footer>
     <!--FIM BUTTON CART FOOTER-->
